@@ -1,0 +1,80 @@
+{
+  "app_name": "PsychicHandOS",
+  "version": "1.0.0",
+  "cursor": {
+    "enabled": true,
+    "finger_mask": "01000",
+    "pinch_click": true,
+    "pinch_threshold": 0.36,
+    "drag_hold_sec": 0.35,
+    "double_click_window_sec": 0.45,
+    "margin_x": 0.15,
+    "margin_y": 0.15,
+    "smoothing_min_cutoff": 1.4,
+    "smoothing_beta": 0.04,
+    "deadzone": 0.0025
+  },
+  "scroll": {
+    "enabled": true,
+    "finger_mask": "01100",
+    "sensitivity": 18.0,
+    "deadzone": 0.004
+  },
+  "gestures": [
+    {
+      "id": "right_click_three_fingers",
+      "name": "Clic Derecho (3 dedos)",
+      "enabled": true,
+      "trigger_type": "mask",
+      "finger_mask": "01110",
+      "hold_frames": 6,
+      "cooldown": 0.8,
+      "action_type": "mouse_right_click",
+      "action_value": ""
+    },
+    {
+      "id": "fist_toggle_desktop",
+      "name": "Puno Cerrado (Mostrar/Ocultar Escritorio)",
+      "enabled": true,
+      "trigger_type": "mask",
+      "finger_mask": "00000",
+      "hold_frames": 8,
+      "cooldown": 1.2,
+      "action_type": "hotkey",
+      "action_value": "win+d"
+    },
+    {
+      "id": "shaka_alt_tab",
+      "name": "Shaka Pulgar+Menique (Alt+Tab)",
+      "enabled": true,
+      "trigger_type": "mask",
+      "finger_mask": "10001",
+      "hold_frames": 7,
+      "cooldown": 1.2,
+      "action_type": "hotkey",
+      "action_value": "alt+tab"
+    },
+    {
+      "id": "pinch_middle_minimize",
+      "name": "Pinch Medio+Pulgar (Minimizar Ventana)",
+      "enabled": true,
+      "trigger_type": "pinch_middle",
+      "finger_mask": "",
+      "hold_frames": 4,
+      "cooldown": 1.0,
+      "action_type": "hotkey",
+      "action_value": "win+down"
+    },
+    {
+      "id": "rock_play_pause",
+      "name": "Cuernos Indice+Menique (Play/Pausa)",
+      "enabled": false,
+      "trigger_type": "mask",
+      "finger_mask": "01001",
+      "hold_frames": 8,
+      "cooldown": 1.2,
+      "action_type": "media_play_pause",
+      "action_value": ""
+    }
+  ]
+}

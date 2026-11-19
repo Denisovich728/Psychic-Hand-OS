@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+live_pose.json
+psychic_context.json
+hand_landmarker.task
